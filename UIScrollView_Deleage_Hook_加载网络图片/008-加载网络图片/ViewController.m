@@ -27,10 +27,21 @@
  功能  SB&XIB 是一样的
  如果重写了这个方法，SB和XIB都无效
  */
--(void)loadView{
+//-(void)loadView{
+//
+//}
+
+/**
+ 视图加载完毕
+ 一般做初始化工作
+ */
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
     //搭建界面
-    self.scrollView =[[UIScrollView alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    self.view  =self.scrollView;
+    CGSize size = self.view.frame.size;
+    self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 170, size.width, size.height - 80)];
+    [self.view addSubview:self.scrollView];
     //MARK:-设置缩放属性
     self.scrollView.delegate = self;
     self.scrollView.minimumZoomScale = 0.5;
@@ -41,17 +52,11 @@
     //会调用view的getter方法。loadView方法在执行的过程中，如果self.view == nil，会自动调用loadView加载
     [self.view addSubview:iv];
     self.imageView = iv;
-}
-
-/**
- 视图加载完毕
- 一般做初始化工作
- */
-- (void)viewDidLoad {
-    [super viewDidLoad];
+    
 //    [self downloadImage];
 //    NSThread * t1 =[[NSThread alloc]initWithTarget:self selector:@selector(downloadImage) object:nil];
 //    [t1 start];
+    
     
     //MARK: - 利用GCD来做下载图片
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
@@ -126,7 +131,8 @@
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
 
-    NSLog(@"%@",NSStringFromCGAffineTransform(self.imageView.transform));
+    NSLog(@"scrollViewDidScroll");
+//    NSLog(@"%@",NSStringFromCGAffineTransform(self.imageView.transform));
     
 }
 

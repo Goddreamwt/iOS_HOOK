@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIScrollViewDelegateHook : UIScrollView
+@interface UIScrollViewDelegateHook : NSObject <UIScrollViewDelegate>
 
 + (void)exchangeUIScrollViewDelegateMethod:(Class)aClass;
 

@@ -15,7 +15,7 @@
 		0464F6B4209AAD1B00F55439 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0464F6B3209AAD1B00F55439 /* main.m */; };
 		0464F6BE209AAD1B00F55439 /* _08_______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0464F6BD209AAD1B00F55439 /* _08_______Tests.m */; };
 		0464F6C9209AAD1B00F55439 /* _08_______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0464F6C8209AAD1B00F55439 /* _08_______UITests.m */; };
-		04C9039720A13B7A004E186D /* UIScrollView+Intercepter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C9039620A13B7A004E186D /* UIScrollView+Intercepter.m */; };
+		048D083720A2947B004A9B2D /* UIScrollView+UIScrollView_Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 048D083620A2947B004A9B2D /* UIScrollView+UIScrollView_Hook.m */; };
 		04C9039A20A1507E004E186D /* UIScrollViewDelegateHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C9039920A1507E004E186D /* UIScrollViewDelegateHook.m */; };
 /* End PBXBuildFile section */
 
@@ -53,8 +53,8 @@
 		0464F6C4209AAD1B00F55439 /* 008-加载网络图片UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "008-加载网络图片UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0464F6C8209AAD1B00F55439 /* _08_______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_08_______UITests.m"; sourceTree = "<group>"; };
 		0464F6CA209AAD1B00F55439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04C9039520A13B7A004E186D /* UIScrollView+Intercepter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Intercepter.h"; sourceTree = "<group>"; };
-		04C9039620A13B7A004E186D /* UIScrollView+Intercepter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Intercepter.m"; sourceTree = "<group>"; };
+		048D083520A2947B004A9B2D /* UIScrollView+UIScrollView_Hook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+UIScrollView_Hook.h"; sourceTree = "<group>"; };
+		048D083620A2947B004A9B2D /* UIScrollView+UIScrollView_Hook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+UIScrollView_Hook.m"; sourceTree = "<group>"; };
 		04C9039820A1507E004E186D /* UIScrollViewDelegateHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIScrollViewDelegateHook.h; sourceTree = "<group>"; };
 		04C9039920A1507E004E186D /* UIScrollViewDelegateHook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIScrollViewDelegateHook.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,10 +116,10 @@
 				0464F6AF209AAD1B00F55439 /* LaunchScreen.storyboard */,
 				0464F6B2209AAD1B00F55439 /* Info.plist */,
 				0464F6B3209AAD1B00F55439 /* main.m */,
-				04C9039520A13B7A004E186D /* UIScrollView+Intercepter.h */,
-				04C9039620A13B7A004E186D /* UIScrollView+Intercepter.m */,
 				04C9039820A1507E004E186D /* UIScrollViewDelegateHook.h */,
 				04C9039920A1507E004E186D /* UIScrollViewDelegateHook.m */,
+				048D083520A2947B004A9B2D /* UIScrollView+UIScrollView_Hook.h */,
+				048D083620A2947B004A9B2D /* UIScrollView+UIScrollView_Hook.m */,
 			);
 			path = "008-加载网络图片";
 			sourceTree = "<group>";
@@ -275,7 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04C9039720A13B7A004E186D /* UIScrollView+Intercepter.m in Sources */,
+				048D083720A2947B004A9B2D /* UIScrollView+UIScrollView_Hook.m in Sources */,
 				0464F6A9209AAD1B00F55439 /* ViewController.m in Sources */,
 				0464F6B4209AAD1B00F55439 /* main.m in Sources */,
 				04C9039A20A1507E004E186D /* UIScrollViewDelegateHook.m in Sources */,
